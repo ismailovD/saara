@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../libs/bootstrap/bootstrap.min.css">
+        <link rel="stylesheet" href="../style/style.css">
+        <title>Saara</title>
+    </head>
+    <body>
+        <header class="header">
+            <img src="../images/header.webp" alt="header" class="header__img">
+            <img src="../images/header-mini.webp" alt="header"
+                class="header__img2">
+        </header>
+        <main class="reason">
+            <div class="container">
+                <div class="row justify-content-center row__title">
+                    <a href="./items.html" class="btn__small-screen">
+                        <svg class="btn__icon">
+                            <use xlink:href="../svg/sprite.svg#chevron-left"></use>
+                        </svg>
+                    </a>
+                    <div class="col-10 col-sm-12">
+                        <h1 class="reason__title title">Select the reason of your return</h1>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-12 col-sm-6 col-lg-5 col-xl-3 ">
+                        <label class="reason__label" data-location="location1">
+                            Item is defective
+                            <input class="reason__input" type="radio" name="reason" >
+                            <span class="reason__input-circle"></span>
+                        </label>
+                    </div>            
+                    <div class="col-12 col-sm-6 col-lg-5 col-xl-3 ">
+                        <label class="reason__label" data-location="location2">
+                            Fitment issues
+                            <input class="reason__input" type="radio" name="reason" >
+                            <span class="reason__input-circle"></span>
+                        </label>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-5 col-xl-3 ">
+                        <label class="reason__label" data-location="location3">
+                            Don’t like/need
+                            <input class="reason__input" type="radio" name="reason" >
+                            <span class="reason__input-circle"></span>
+                        </label>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-5 col-xl-3 ">
+                        <label class="reason__label" data-location="location4">
+                            Fitment issues
+                            <input class="reason__input" type="radio" name="reason" >
+                            <span class="reason__input-circle"></span>
+                        </label>
+                    </div>
+                     
+                     <div class="col-12 col-lg-10 col-xl-12">
+                        <label  class="reason__label other show" data-location="location5">
+                            Other
+                            <svg class="other__close">
+                                <use xlink:href="../svg/sprite.svg#close" ></use>
+                            </svg>
+                            <textarea  class="other__textarea" placeholder="Write your version"></textarea>
+                        </label>
+                     </div>
+                </div>
+                
+                <div class="row btns">
+                    <div class="col-6 col-md-4 col-lg-3 col-xl-2 btn__big-screen">
+                        <a href="./items.html" class="btn btn__back">Back</a>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-3 col-xl-2">
+                        <button type="button" class="btn btn__continue button" disabled>continue</button>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <img src="../images/footer.webp" alt="footer" class="footer__img">
+        </footer>
+ 
+        <script src="../js/reason.js"></script>
+    </body>
+</html>

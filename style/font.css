@@ -1,0 +1,45 @@
+@font-face {
+    font-family: "Comfortaa-Bold";
+    src: url(../fonts/Comfortaa/Comfortaa-Bold.ttf);
+    font-weight: 700;
+}
+@font-face {
+    font-family: "Lato-Regular";
+    src: url(../fonts/Lato/Lato-Regular.ttf);
+    font-weight: 400;
+}
+@font-face {
+    font-family: "Lato-Medium";
+    src: url(../fonts/Lato/Lato-Medium.ttf);
+    font-weight: 500;
+}
+@font-face {
+    font-family: "Lato-Semibold";
+    src: url(../fonts/Lato/Lato-Semibold.ttf);
+    font-weight: 600;
+}
+@font-face {
+    font-family: "Lato-Bold";
+    src: url(../fonts/Lato/Lato-Bold.ttf);
+    font-weight: 700;
+}
+@font-face {
+    font-family: "Lato-Heavy";
+    src: url(../fonts/Lato/Lato-Heavy.ttf);
+    font-weight: 800;
+} 
+@font-face {
+    font-family: "Lato-Black";
+    src: url(../fonts/Lato/Lato-Black.ttf);
+    font-weight: 900;
+}
+@font-face {
+    font-family: "Nexa-Bold";
+    src: url(../fonts/Nexa/Nexa-Bold.otf);
+    font-weight: 700;
+}
+@font-face {
+    font-family: "Roboto-Bold";
+    src: url(../fonts/Roboto/Roboto-Bold.ttf);
+    font-weight: 700;
+}
