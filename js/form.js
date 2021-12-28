@@ -36,7 +36,8 @@ const inpEmail = document.querySelector('.form__email'),
         })
 
         function confirm() {
-            if(inpEmail.value > 0 && inpName.value > 0 && inpStore.value > 0) {
+            if(inpEmail.value.length > 0 && inpName.value.length > 0 && inpStore.value.length > 0) {
                 btn.disabled = false;
             }else  btn.disabled = true;
         }
+        
