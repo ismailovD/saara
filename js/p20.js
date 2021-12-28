@@ -52,7 +52,7 @@ radioChoose.forEach(elem => {
         }) 
         if(elem.querySelector('input').checked){
             elem.closest(parent).classList.add('active');
-            pathLocation = locationObj[elem.getAttribute('data-location')]; 
+            pathLocation = locationObj[elem.closest(parent).getAttribute('data-location')]; 
             btn.disabled = false;
         }  
     })
