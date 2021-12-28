@@ -24,7 +24,7 @@ const   inputOrder = document.querySelector('.form__order'),
             }else {
                 inputAuth.classList.remove('form__invalid')
                 inValEmail.classList.remove('active')
-            } 
+            }  
             confirm()
         })
         
@@ -42,8 +42,8 @@ btn.addEventListener('click', (e)=> {
     }
 })
 
-function confirm() {
-    if(inputOrder.value > 0 && inputAuth.value > 0) {
+function confirm() { 
+    if(inputOrder.value.length > 0 && inputAuth.value.length > 0) {
         btn.disabled = false;
     }else  btn.disabled = true;
 }
