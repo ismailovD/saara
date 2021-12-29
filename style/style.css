@@ -56,7 +56,7 @@ ul {
 }
 
 body {
-    min-width: 375px
+    min-width: 375px; 
 }
 
 .header__img,
@@ -311,7 +311,10 @@ body {
     border-radius: 4px;
     width: 100%;
     opacity: 0;
-    text-transform: capitalize
+    text-transform: capitalize;
+    display: inline-block;
+    left: 0;
+    top: 100%;
 }
 
 .form__valid-num.active,
@@ -370,7 +373,8 @@ body {
 
 .btn__continue {
     background: var(--blue);
-    color: var(--white)
+    color: var(--white);
+    position: relative;
 }
 
 .btn__continue:hover {
@@ -394,7 +398,8 @@ body {
 }
 
 .button:disabled {
-    background: var(--light-purple)
+    background: var(--light-purple);
+    opacity: 1;
 }
 
 .button:disabled:hover {
@@ -1198,50 +1203,7 @@ body {
     margin-bottom: 0
 }
 
-.form__invalid {
-    -webkit-animation: infinite 2s warning;
-    animation: infinite 2s warning
-}
 
-.form__invalid:focus {
-    outline: none;
-    -webkit-animation: infinite 2s warning;
-    animation: infinite 2s warning
-}
-
-@-webkit-keyframes warning {
-    from {
-        -webkit-box-shadow: inset 0 0 10px 2px var(--red);
-        box-shadow: inset 0 0 10px 2px var(--red)
-    }
-
-    50% {
-        -webkit-box-shadow: inset 0 0 5px 1px var(--red);
-        box-shadow: inset 0 0 5px 1px var(--red)
-    }
-
-    to {
-        -webkit-box-shadow: inset 0 0 10px 2px var(--red);
-        box-shadow: inset 0 0 10px 2px var(--red)
-    }
-}
-
-@keyframes warning {
-    from {
-        -webkit-box-shadow: inset 0 0 10px 2px var(--red);
-        box-shadow: inset 0 0 10px 2px var(--red)
-    }
-
-    50% {
-        -webkit-box-shadow: inset 0 0 5px 1px var(--red);
-        box-shadow: inset 0 0 5px 1px var(--red)
-    }
-
-    to {
-        -webkit-box-shadow: inset 0 0 10px 2px var(--red);
-        box-shadow: inset 0 0 10px 2px var(--red)
-    }
-}
 
 .product__top {
     padding-top: 61px;
@@ -3652,18 +3614,18 @@ body {
     border-radius: 5px;
     background: var(--bg-other-main);
     padding: 16px;
-    border: 1px solid var(--grey-2);
+    outline: 1px solid var(--grey-2);
     font-family: var(--f500-lato);
     font-weight: 500;
     font-size: 16px;
     line-height: 19px;
     color: var(--blue);
-    margin-bottom: 20px
+    margin-bottom: 20px;
+    border: none;
 }
 
-.part__form-inp:focus {
-    outline: none;
-    border: 1px solid var(--blue)
+.part__form-inp:focus { 
+    outline: 1px solid var(--blue)
 }
 
 .part__form-inp::-webkit-input-placeholder {
@@ -3725,6 +3687,7 @@ body {
     -webkit-box-shadow: var(--btn-shadow);
     box-shadow: var(--btn-shadow);
     position: absolute;
+    left: 0;
     bottom: 0;
     -webkit-transition: 1s;
     -o-transition: 1s;
@@ -3740,6 +3703,52 @@ body {
 
 .part__invalid-email.active {
     opacity: 1
+}
+
+
+.form__invalid {
+    -webkit-animation: infinite 2s warning;
+    animation: infinite 2s warning
+}
+
+.form__invalid:focus {
+    outline: none;
+    -webkit-animation: infinite 2s warning;
+    animation: infinite 2s warning
+}
+
+@-webkit-keyframes warning {
+    from {
+        -webkit-box-shadow: inset 0 0 10px 2px var(--red);
+        box-shadow: inset 0 0 10px 2px var(--red)
+    }
+
+    50% {
+        -webkit-box-shadow: inset 0 0 5px 1px var(--red);
+        box-shadow: inset 0 0 5px 1px var(--red)
+    }
+
+    to {
+        -webkit-box-shadow: inset 0 0 10px 2px var(--red);
+        box-shadow: inset 0 0 10px 2px var(--red)
+    }
+}
+
+@keyframes warning {
+    from {
+        -webkit-box-shadow: inset 0 0 10px 2px var(--red);
+        box-shadow: inset 0 0 10px 2px var(--red)
+    }
+
+    50% {
+        -webkit-box-shadow: inset 0 0 5px 1px var(--red);
+        box-shadow: inset 0 0 5px 1px var(--red)
+    }
+
+    to {
+        -webkit-box-shadow: inset 0 0 10px 2px var(--red);
+        box-shadow: inset 0 0 10px 2px var(--red)
+    }
 }
 
 @media (max-width: 1399px) {
@@ -3837,7 +3846,7 @@ body {
 
 @media (max-width: 991px) {
     .main__logo {
-        opacity: 0
+        display: none;
     }
 
     .main__logo-2 {
@@ -4863,6 +4872,15 @@ body {
         font-size: 30px;
         line-height: 45px;
         margin-bottom: 30px
+    }
+
+    .btn__continue { 
+        display: inline-block;
+        position: fixed;
+        width: 90%;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%); 
     }
 }
 
