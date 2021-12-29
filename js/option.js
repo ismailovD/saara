@@ -24,6 +24,11 @@ const tabs = document.querySelectorAll('.option__tab'),
         optionsPanel = document.querySelector('.option__panel'),
         btns = document.querySelectorAll('.button'),
         backPage = document.querySelectorAll('.back-page');
+        // body = document.querySelector('body'),
+        // slideColor = document.querySelector('.slide-color'),
+        // slideOther = document.querySelector('.slide-other'),
+        // btnColor = document.querySelector('#color-btn'),
+        // btnOther = document.querySelector('#other-btn');
 
 
 
@@ -104,14 +109,24 @@ const colorInput = new Color({
 
 
 window.addEventListener('load', ()=> {
-    if(window.innerWidth < 1200){
+    if(window.innerWidth < 576){
+        // changeBtn()
         changeContent() 
+    }else if ( window.innerWidth < 1200) {
+        changeContent() 
+        // returnBtn()
     }
-})
+}) 
 window.addEventListener('resize', ()=> { 
-    if(window.innerWidth < 1200){
+    if(window.innerWidth < 576){
+        // changeBtn()
         changeContent() 
-    }else {
+    }else if ( window.innerWidth < 1200) {
+        changeContent() 
+        // returnBtn()
+    }
+    else {
+        // returnBtn()
         returnContent()
     }
 })
@@ -125,3 +140,12 @@ function changeContent() {
 function returnContent() { 
     optionWrapper.insertBefore(optionRowTitle, optionsPanel);  
 }
+
+// function changeBtn() {
+//     body.appendChild(btnColor);
+//     body.appendChild(btnOther);
+// }
+// function returnBtn() {
+//     slideColor.appendChild(btnColor);
+//     slideOther.appendChild(btnOther);
+// }

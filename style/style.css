@@ -4881,8 +4881,13 @@ body {
         width: calc(100% - var(--bs-gutter-x,.75rem));
         bottom: 20px;
         left: 50%;
-        z-index: 99999;
+        z-index: 1;
         transform: translateX(-50%); 
+    } 
+    .option .btn__continue { 
+        position: static;
+        transform: none;
+        width: 100%;
     } 
      
 }
