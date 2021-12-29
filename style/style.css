@@ -399,7 +399,7 @@ body {
 
 .button:disabled {
     background: var(--light-purple);
-    pointer-events: visible;
+    pointer-events: auto;
     opacity: 1;
 }
 
