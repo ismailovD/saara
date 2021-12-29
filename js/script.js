@@ -29,7 +29,7 @@ cards.forEach(e => {
 btn.addEventListener('click', (e)=> {    
         e.preventDefault() 
         location.href = "/saara/pages/reason.html"; 
-})
+}, false)
 
 
 

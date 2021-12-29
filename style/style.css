@@ -56,7 +56,7 @@ ul {
 }
 
 body {
-    min-width: 375px; 
+    min-width: 375px;
 }
 
 .header__img,
@@ -399,6 +399,7 @@ body {
 
 .button:disabled {
     background: var(--light-purple);
+    pointer-events: visible;
     opacity: 1;
 }
 
@@ -4877,11 +4878,13 @@ body {
     .btn__continue { 
         display: inline-block;
         position: fixed;
-        width: 90%;
+        width: calc(100% - var(--bs-gutter-x,.75rem));
         bottom: 20px;
         left: 50%;
+        z-index: 99999;
         transform: translateX(-50%); 
-    }
+    } 
+     
 }
 
 @media (max-width: 420px) {
