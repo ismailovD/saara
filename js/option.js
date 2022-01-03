@@ -22,8 +22,8 @@ const tabs = document.querySelectorAll('.option__tab'),
         optionWrapper =document.querySelector('.option__wrapper'),
         oprionRight = document.querySelector('.option__right'),
         optionsPanel = document.querySelector('.option__panel'),
-        btns = document.querySelectorAll('.button'),
-        backPage = document.querySelectorAll('.back-page');
+        btns = document.querySelectorAll('.button');
+        
         // body = document.querySelector('body'),
         // slideColor = document.querySelector('.slide-color'),
         // slideOther = document.querySelector('.slide-other'),
@@ -32,32 +32,8 @@ const tabs = document.querySelectorAll('.option__tab'),
 
 
 
-let pathLocation = '/saara/pages/p20.html'
-
-let backLocation;
-let trueOrFalse = sessionStorage.getItem('boolean'); 
-let dataStorage = sessionStorage.getItem('backPage');
-let backPageArr = dataStorage.split(',');  
-console.log(backPageArr);
-if(Boolean(trueOrFalse)){ 
-    backLocation = backPageArr[backPageArr.length - 1]; 
-    console.log(backLocation);  
-}else {
-    backPageArr.pop();
-    console.log(backPageArr);
-    backLocation = backPageArr[backPageArr.length - 1];
-    console.log(backLocation);
-} 
-console.log(backPageArr);
-backPage.forEach(back => { 
-    back.addEventListener('click', (e) => {
-        e.preventDefault(); 
-        sessionStorage.setItem('boolean' , ""); 
-        sessionStorage.setItem('backPage', backPageArr);
-        console.log(backPageArr); 
-        location.href = backLocation; 
-    })
-})
+pathLocation = '/saara/pages/p20.html'
+ 
 btns.forEach(btn => {
     btn.addEventListener('click', (e)=> {    
         e.preventDefault(); 
@@ -67,6 +43,7 @@ btns.forEach(btn => {
         location.href = pathLocation; 
     }); 
 })
+
 
 let activeTab = sessionStorage.getItem('tab');
 
@@ -109,24 +86,15 @@ const colorInput = new Color({
 
 
 window.addEventListener('load', ()=> {
-    if(window.innerWidth < 576){
-        // changeBtn()
+    if ( window.innerWidth < 1200) {
         changeContent() 
-    }else if ( window.innerWidth < 1200) {
-        changeContent() 
-        // returnBtn()
     }
 }) 
 window.addEventListener('resize', ()=> { 
-    if(window.innerWidth < 576){
-        // changeBtn()
+    if ( window.innerWidth < 1200) {
         changeContent() 
-    }else if ( window.innerWidth < 1200) {
-        changeContent() 
-        // returnBtn()
     }
     else {
-        // returnBtn()
         returnContent()
     }
 })
@@ -142,10 +110,16 @@ function returnContent() {
 }
 
 // function changeBtn() {
-//     body.appendChild(btnColor);
-//     body.appendChild(btnOther);
+//     console.log(slideColor);
+//     if(slideColor.classList.contains('swiper-slide-active')){
+//         body.appendChild(btnColor);
+//         slideOther.appendChild(btnOther);
+//     }else {
+//         body.appendChild(btnOther);
+//         slideColor.appendChild(btnColor);
+//     } 
 // }
-// function returnBtn() {
+// function returnBtn() { 
 //     slideColor.appendChild(btnColor);
 //     slideOther.appendChild(btnOther);
 // }

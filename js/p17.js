@@ -1,6 +1,5 @@
 const   radioChoose = document.querySelectorAll('.choose__card'),  
-        parent = '.choose__card',
-        btn = document.querySelector('.button');
+        parent = '.choose__card';
 
 
 radioChoose.forEach(elem => {
@@ -14,8 +13,4 @@ radioChoose.forEach(elem => {
         }  
     })
 })
-
-btn.addEventListener('click', (e)=> {    
-    e.preventDefault() 
-    // location.href = "/pages/photo.html"; 
-}) 
+ 

@@ -12,7 +12,7 @@ radioChoose.forEach(elem => {
             elem.closest(parent).classList.add('active') 
             btn.disabled = false;
         }  
-    })
+    }) 
 })
 
 btn.addEventListener('click', (e)=> {    
