@@ -8,9 +8,17 @@ const cards = document.querySelectorAll('.card'),
     photoTable = document.querySelector('.photo__modal'), 
     photoCard = document.querySelectorAll('.photo__card'),
     photoRow = document.querySelector('.photo__row'),
-    btn = document.querySelector('.button');
+    btn = document.querySelector('.button'),
+    itemsRight = document.querySelector('.items__right'),
+    itemsContent = document.querySelector('.items__content');
  
-
+window.addEventListener('load', () => {
+    if(itemsRight.clientWidth == 0){
+        itemsContent.classList.add('change')
+    }
+})
+    
+  
 
 
 cards.forEach(e => {
