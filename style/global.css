@@ -10,7 +10,8 @@
 
 :root {
     --blue: #473E9E;
-    --light-blue: #3291E9;
+    --blue-2: #6279f8;
+    --light-blue: #5f6ffa;
     --white: #fff;
     --black: #000;
     --purple: #918BC5;
@@ -46,6 +47,10 @@
     --loading-bg: #EDECFF;
     --header-top: #F7F9FC;
     --nav-link: #3A3A3A;
+    --thumb-color: #E9E8F3;
+    --search-shadow:0px 4px 10px #E4E3F7;
+    --search-hover:#F7F6FF;
+    --dark-purple-opacity-50: rgba(149, 115, 233, 0.5);
 }
 a,
 a:hover {
