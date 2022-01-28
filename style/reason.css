@@ -4,7 +4,11 @@
     padding-bottom: 100px;
     background: var(--bg-other-main)
 }
-
+.reason__card {
+    flex: auto 1 0;   
+    width: fit-content;
+    position: relative;
+}
 .reason__label {
     width: 100%;
     padding: 24px 30px;
@@ -39,8 +43,9 @@
 }
 
 .reason__input-circle {
-    width: 20px;
+    min-width: 20px;
     height: 20px;
+    margin-left: 20px;
     border-radius: 50%;
     border: 2px solid var(--reason-input-circle);
     position: relative
