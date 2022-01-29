@@ -117,7 +117,7 @@
 }
 
 .bank-account__form-btn:disabled {
-    background: var(--blue-2)
+    background: var(--purple)
 }
 
 .bank-account__form-label {
