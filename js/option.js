@@ -1,8 +1,7 @@
 
 
 const swiper2 = new Swiper(".thumbSwiper", {
-    slidesPerView: 2,
-    
+    slidesPerView: 2, 
     freeMode: true,
     watchSlidesProgress: true 
  });

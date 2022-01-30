@@ -1,4 +1,3 @@
- 
 .bank-account__page {
     background: var(--blue);
     position: relative;
@@ -125,76 +124,6 @@
     position: relative
 }
 
-.bank-account__invalid-email {
-    color: var(--red);
-    font-family: var(--f400-lato);
-    font-weight: 400;
-    padding: 5px 10px;
-    -webkit-box-shadow: var(--btn-shadow);
-    box-shadow: var(--btn-shadow);
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    -webkit-transition: 1s;
-    -o-transition: 1s;
-    transition: 1s;
-    z-index: 10;
-    background: var(--white);
-    font-size: 16px;
-    border-radius: 4px;
-    width: 100%;
-    opacity: 0;
-    text-transform: capitalize
-}
-
-.bank-account__invalid-email.active {
-    opacity: 1
-}
-
-.form__invalid {
-    -webkit-animation: infinite 2s warning;
-    animation: infinite 2s warning
-}
-
-.form__invalid:focus {
-    outline: none;
-    -webkit-animation: infinite 2s warning;
-    animation: infinite 2s warning
-}
-
-@-webkit-keyframes warning {
-    from {
-        -webkit-box-shadow: inset 0 0 10px 2px var(--red);
-        box-shadow: inset 0 0 10px 2px var(--red)
-    }
-
-    50% {
-        -webkit-box-shadow: inset 0 0 5px 1px var(--red);
-        box-shadow: inset 0 0 5px 1px var(--red)
-    }
-
-    to {
-        -webkit-box-shadow: inset 0 0 10px 2px var(--red);
-        box-shadow: inset 0 0 10px 2px var(--red)
-    }
-}
-
-@keyframes warning {
-    from {
-        -webkit-box-shadow: inset 0 0 10px 2px var(--red);
-        box-shadow: inset 0 0 10px 2px var(--red)
-    }
-
-    50% {
-        -webkit-box-shadow: inset 0 0 5px 1px var(--red);
-        box-shadow: inset 0 0 5px 1px var(--red)
-    }
-
-    to {
-        -webkit-box-shadow: inset 0 0 10px 2px var(--red);
-        box-shadow: inset 0 0 10px 2px var(--red)
-    }
-}
  
 @media (max-width: 575px)  {
     .bank-account__form {
